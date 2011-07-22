@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+   <!-- Meta tags -->
+ 		<meta name="description" content="" />
+ 		<meta name="viewport" content="width=device-width, initial-scale=.73, maximum-scale=.73" />
+
+<title>Kors 2011 Press Kit</title>
+  
+<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  
+<link rel="stylesheet" href="css/style.css" type="text/css" media="screen" /> 
+<link rel="stylesheet" href="css/press.css" type="text/css" media="screen" /> 
+<!-- scripts at bottom of page -->
+
+</head>
+
+<!-- Jquery libraries -->
+  <script type="text/javascript" src="js/latest-jquery.js"></script>
+  <script src="js/jquery.isotope.min.js"></script>
+  <script type="text/javascript" src="js/jquery.timers-1.1.2.js" ></script>
+  <script type="text/javascript" src="js/jquery.hoverIntent.minified.js" ></script>
+  <script type="text/javascript" src="js/jquery.collapse.js" ></script>
+  <script type="text/javascript" src="js/jquery.easing.js" ></script>
+   
+
+
+<body class="demo " style="height:100%;   background: grey url('images/grey_background.jpg'); background-repeat:repeat-x;">
+
+<div class="text_wrapper">
+	
+    
+
+          <div class="press_info">
+          <div class="logo"><img src="images/mk_logo.png"></div>
+                  <p>SICILIAN SAILOR. (RECLINING.) Tell me not of it! Hark ye, lad&mdash;fleet interlacings of the limbs&mdash;lithe swayings&mdash;coyings&mdash;flutterings! lip! heart! hip! all graze: unceasing touch and go! not taste, observe ye, else come satiety. Eh, Pagan? (NUDGING.)</p>
+                
+                <p>TAHITAN SAILOR. (RECLINING ON A MAT.) Hail, holy nakedness of our dancing girls!&mdash;the Heeva-Heeva! Ah! low veiled, high palmed Tahiti! I still rest me on thy mat, but the soft soil has slid! I saw thee woven in the wood, my mat! green the first day I brought ye thence; now worn and wilted quite. Ah me!&mdash;not thou nor I can bear the change! How then, if so be transplanted to yon sky? Hear I the roaring streams from Pirohitee's peak of spears, when they leap down the crags and drown the villages?&mdash;The blast! the blast! Up, spine, and meet it! (LEAPS TO HIS FEET.)</p>
+                
+                <p>PORTUGUESE SAILOR. How the sea rolls swashing 'gainst the side! Stand by for reefing, hearties! the winds are just crossing swords, pell-mell they'll go lunging presently.</p>
+                
+                <p>DANISH SAILOR. Crack, crack, old ship! so long as thou crackest, thou holdest! Well done! The mate there holds ye to it stiffly. He's no more afraid than the isle fort at Cattegat, put there to fight the Baltic with storm-lashed guns, on which the sea-salt cakes!</p>
+                
+                <p>4TH NANTUCKET SAILOR. He has his orders, mind ye that. I heard old Ahab tell him he must always kill a squall, something as they burst a waterspout with a pistol&mdash;fire your ship right into it!</p>
+                
+                <p>ENGLISH SAILOR. Blood! but that old man's a grand old cove! We are the lads to hunt him up his whale!</p>
+          </div>
+          
+          </div>
+  
+  
+    <div id="navigation">
+<!--  list/navigation --> 
+
+	        
+     <nav id="menu">
+     	<ul id="collapser">
+		 <!-- <li>LANGUAGES
+		    <ul>
+		      <li><a href="index.html">ENGLISH</a></li>
+		      <li><a href="index.html">ESPAÑOL</a></li>
+              <li><a href="index.html">FRANÇAIS</a></li>
+              <li><a href="index.html">DEUTSCH</a></li>
+		    </ul>
+		  </li>-->
+		  <li><a href="index.html">HOME</a></li>
+          <li><a href="ad_images.html">MK ADS</a></li>
+          <li><a href="ad_images_mmk.html">MMK ADS</a></li>
+          <li><a href="watches.html">FEATURES</a></li>
+          <li><a href="watch_info.html">WATCHES</a></li>
+          <li><a href="press.html">PRESS</a></li>
+          <li><a href="bio.html">BIO</a></li>
+		</ul>
+     	
+     </nav>
+  
+  
+<!--  tab button/navigation -->      
+
+  <div id="button"><img src="img/nav.png" style="margin-top:27px; margin-left: 5px;"></div>   
+   
+ </div>
+  
+  
+  
+  
+  
+<!--  <div id="left"></div>
+
+<div id="right"></div>
+
+<div id="top"></div>-->
+
+<!--<div id="bottom"></div>-->
+  
+
+   
+   
+   
+   
+<!-- Jquery for #container -->
+  <script>
+    $(function(){
+      var $container = $('#container');
+        $container.imagesLoaded( function(){
+        $(this).isotope({
+          itemSelector : '.photo'
+        });
+      });
+
+    });
+  </script>
+  
+  
+  
+  
+  
+
+
+
+
+<!--Jquery for #button navigation/Tab-->
+<script>
+
+$(document).ready(function()
+{
+
+
+
+$("ul,#navigation").animate({"left": "-=215px"}, "slow");
+$("#button").animate ({"left": "-=195px"}, "slow");
+$("#container").animate({"left": "-=95px"}, "slow");
+
+
+
+});
+</script>
+
+
+
+
+<!--Jquery  #button navigation/Tab-->
+<script>
+
+
+$("menu, #navigation").hoverIntent(
+  function () {
+     $("ul,#navigation").animate({"left": "+=175px"}, "slow");
+	 $("#button").animate({"left": "+=175px"}, "slow");
+	/* $("#container").animate({"left": "+=105px"}, "slow");*/
+  },
+  function () {
+     $("ul,#navigation").animate({"left": "-=175px"}, "slow");
+ 	 $("#button").animate({"left": "-=175px"}, "slow");
+/*     $("#container").animate({"left": "-=105px"}, "slow");*/
+  }
+);
+
+</script>
+
+
+
+
+
+
+
+
+</body>
+
+</html>

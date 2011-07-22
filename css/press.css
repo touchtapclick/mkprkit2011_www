@@ -1,0 +1,67 @@
+
+
+.press_info {
+	
+	padding-top: 20%;
+	padding-bottom: 40%;
+	max-width: 60em;
+	text-align:left;
+	width: 90%;
+	margin:0px auto;
+	
+	
+}
+
+.text_wrapper {
+
+	max-width: 70%;
+	min-width: 20%;
+	margin:0px auto;
+	text-align:center;
+	position:relative;
+	
+	
+	
+	
+}
+
+
+body {
+	margin-top:50px 0px; padding:0px;
+	
+	}
+	
+	
+	
+.logo {
+
+	padding-bottom: 4%;
+	padding-right: 4%;
+	text-align:center;	
+	
+}
+
+
+.logo img{
+
+	max-width:100%;
+	
+}
+		
+	#top, #bottom, #left, #right {
+        background: white;
+        position: fixed;
+        }
+        #left, #right {
+                top: 0; bottom: 0;
+                width: 39px;
+                }
+                #left { left: 0; }
+                #right { right: 0; }
+
+        #top, #bottom {
+                left: 0; right: 0;
+                height: 35px;
+                }
+                #top { top: 0; }
+                #bottom { bottom: 0px; position: fixed; }	

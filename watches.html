@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+   <!-- Meta tags -->
+ 		<meta name="description" content="" />
+ 		<meta name="viewport" content="width=device-width, initial-scale=.73, maximum-scale=.73" />
+
+	<head>
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" /> 
+
+		<title>Kors 2011 Press Kit</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+		
+		<link rel="stylesheet" href="css/supersized.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="theme/supersized.shutter.css" type="text/css" media="screen" />
+		
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.easing.min.js"></script>
+		
+		<script type="text/javascript" src="js/supersized.3.2.1.min.js"></script>
+		<script type="text/javascript" src="theme/supersized.shutter.min.js"></script>
+        
+ 
+  <div id="superslide">
+    <script type="text/javascript">
+			
+			jQuery(function($){
+				
+				$.supersized({
+				
+					// Functionality
+					slide_interval          :   5000,		// Length between transitions
+					transition              :   1, 			// 0-None, 1-Fade, 2-Slide Top, 3-Slide Right, 4-Slide Bottom, 5-Slide Left, 6-Carousel Right, 7-Carousel Left
+					transition_speed		:	700,		// Speed of transition
+															   
+					// Components							
+					slide_links				:	'blank',	// Individual links for each slide (Options: false, 'number', 'name', 'blank')
+					slides 					:  	[			// Slideshow Images
+														{image : 'features/test1.jpg', title : 'test1', thumb : 'features/test1.jpg', url : ''},
+														
+														{image : 'features/test2.jpg', title : 'test2', thumb : 'features/test2.jpg', url : ''}
+												]
+					
+				});
+		    });
+		    
+		</script>
+        </div>
+		
+		
+		
+	</head>
+	
+	<style type="text/css">
+	
+	
+		ul#demo-block{ margin:0 15px 15px 15px; }
+			ul#demo-block li{ margin:0 0 10px 0; padding:10px; display:inline; float:left; clear:both; color:#aaa; background:url('img/bg-black.png'); font:11px Helvetica, Arial, sans-serif; }
+			ul#demo-block li a{ color:#eee; font-weight:bold; }
+	</style>
+    <script type="text/javascript" src="js/latest-jquery.js"></script>
+    <script type="text/javascript" src="js/jquery.timers-1.1.2.js" ></script>
+  <script type="text/javascript" src="js/jquery.hoverIntent.minified.js" ></script>
+  <script type="text/javascript" src="js/jquery.collapse.js" ></script>
+  <script type="text/javascript" src="js/jquery.easing.js" ></script>
+    
+<body class="demo " style="height:100%;">
+
+
+
+	 
+    
+    <div id="navigation">
+<!--  list/navigation --> 
+
+	        
+     <nav id="menu">
+     	<ul id="collapser">
+		 <!-- <li>LANGUAGES
+		    <ul>
+		      <li><a href="index.html">ENGLISH</a></li>
+		      <li><a href="index.html">ESPAÑOL</a></li>
+              <li><a href="index.html">FRANÇAIS</a></li>
+              <li><a href="index.html">DEUTSCH</a></li>
+		    </ul>
+		  </li>-->
+		  <li><a href="index.html">HOME</a></li>
+          <li><a href="ad_images.html">MK ADS</a></li>
+          <li><a href="ad_images_mmk.html">MMK ADS</a></li>
+          <li><a href="watches.html">FEATURES</a></li>
+          <li><a href="watch_info.html">WATCHES</a></li>
+          <li><a href="press.html">PRESS</a></li>
+          <li><a href="bio.html">BIO</a></li>
+		</ul>
+     	
+     </nav>
+  
+<!--  tab button/navigation -->      
+
+  <div id="button"><img src="img/nav.png" style="margin-top:27px; margin-left: 5px;"></div>  
+   
+ </div>
+ 
+   
+<!--Jquery for #button navigation/Tab-->
+<script>
+
+$(document).ready(function()
+{
+
+
+
+$("ul,#navigation").animate({"left": "-=215px"}, "slow");
+$("#button").animate ({"left": "-=195px"}, "slow");
+/*$("#container").animate({"left": "-=95px"}, "slow");*/
+
+
+
+});
+</script>
+
+
+
+
+<!--Jquery  #button navigation/Tab-->
+<script>
+
+
+$("menu, #navigation").hoverIntent(
+  function () {
+     $("ul,#navigation").animate({"left": "+=175px"}, "slow");
+	 $("#button").animate({"left": "+=175px"}, "slow");
+	/* $("#superslide").animate({"left": "+=105px"}, "slow");*/
+  },
+  function () {
+     $("ul,#navigation").animate({"left": "-=175px"}, "slow");
+ 	 $("#button").animate({"left": "-=175px"}, "slow");
+/*     $("#container").animate({"left": "-=105px"}, "slow");*/
+  }
+);
+
+</script>
+
+<!--navigation collapse-->
+<script type="text/javascript">
+$(function(){
+                
+                $('#collapser').jqcollapse({
+                   slide: true,
+                   speed: 1000,
+                   easing: 'easeOutCubic'
+                });
+                
+            });
+
+</script>
+ 
+
+	<!--Thumbnail navigation-->
+	<div id="prevthumb"></div>
+	<div id="nextthumb"></div>
+	
+	<!--Arrow navigation-->
+	<a id="prevslide" class="load-item"></a>
+	<a id="nextslide" class="load-item"></a>
+	
+	<div id="thumb-tray" class="load-item">
+    
+		<div id="thumb-back"></div>
+		<div id="thumb-forward"></div>
+	</div>
+	
+	<!--Time Bar-->
+	<div id="progress-back" class="load-item">
+    
+		<div id="progress-bar"></div>
+	</div>
+	
+	<!--Control Bar-->
+	<div id="controls-wrapper" class="load-item">
+    	
+    <!--    <div id="white_border_bottom">
+        </div>
+    -->
+    
+    
+<div id="left"></div>
+
+<div id="right"></div>
+
+<div id="top"></div>
+
+<div id="bottom">
+	 <img class="logo_bottom" style="position: fixed; right: 38px; bottom: 75px;" src="img/mk_logo.png"/>
+</div>
+
+
+
+		<div id="controls">
+        
+        
+			
+			<a id="play-button"><img id="pauseplay" src="img/pause.png"/></a>
+		
+			<!--Slide counter-->
+			<div id="slidecounter">
+				<span class="slidenumber"></span> / <span class="totalslides"></span>
+			</div>
+			
+			<!--Slide captions displayed here-->
+			<div id="slidecaption"></div>
+			
+			<!--Thumb Tray button-->
+			<a id="tray-button"><img id="tray-arrow" src="img/button-tray-up.png"/></a>
+            
+           
+			
+			<!--navigation-->
+			<ul id="slide-list"></ul>
+			
+		</div>
+	</div>
+    
+   
+        
+
+</body>
+</html>
